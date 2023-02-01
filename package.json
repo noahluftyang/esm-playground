@@ -1,0 +1,16 @@
+{
+  "name": "esm-playground",
+  "version": "1.0.0",
+  "repository": "git@github.com:noahluftyang/esm-playground.git",
+  "author": "noahluftyang <euihyun.yang.9x@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^2.8.3",
+    "turbo": "^1.7.1"
+  },
+  "workspaces": [
+    "examples/*"
+  ],
+  "packageManager": "yarn@3.3.1"
+}
