@@ -1,12 +1,15 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import { Inter } from "@next/font/google";
+import Image from "next/image";
+import styles from "./page.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default async function Home() {
+  const data = await getData();
+
   return (
     <main className={styles.main}>
+      <h1 className="text-3xl font-bold underline">Hello, {data.name}!</h1>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
@@ -18,7 +21,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -87,5 +90,17 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
+}
+
+async function getData() {
+  const response = await fetch("http://localhost:3000/api/hello", {
+    next: { revalidate: 10 },
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return response.json();
 }

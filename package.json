@@ -13,7 +13,8 @@
     "turbo": "^1.7.1"
   },
   "workspaces": [
-    "examples/*"
+    "examples/*",
+    "packages/*"
   ],
   "packageManager": "yarn@3.3.1"
 }
