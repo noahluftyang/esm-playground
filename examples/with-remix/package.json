@@ -5,7 +5,8 @@
   "type": "module",
   "sideEffects": false,
   "scripts": {
-    "build:css": "npm run generate:css -- --minify",
+    "build": "yarn build:css && remix build",
+    "build:css": "yarn generate:css -- --minify",
     "build:remix": "remix build",
     "build:server": "esbuild --platform=node --format=cjs ./server.ts --outdir=build --bundle",
     "dev": "run-p dev:*",
@@ -37,6 +38,7 @@
   "dependencies": {
     "@prisma/client": "^4.9.0",
     "@remix-run/express": "^1.12.0",
+    "@remix-run/netlify": "^1.12.0",
     "@remix-run/node": "^1.12.0",
     "@remix-run/react": "^1.12.0",
     "@remix-run/server-runtime": "^1.12.0",

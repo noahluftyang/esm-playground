@@ -4365,6 +4365,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@remix-run/netlify@npm:^1.12.0":
+  version: 1.12.0
+  resolution: "@remix-run/netlify@npm:1.12.0"
+  dependencies:
+    "@remix-run/node": 1.12.0
+  peerDependencies:
+    "@netlify/functions": ^0.10.0 || ^0.11.0 || ^1.0.0
+  checksum: 7997ba1987a3d60479ca90a09f7a58130965be27336c903eb87ce6dcda3d63fb84856a8a98d7d1fe95c660988db0f4a0ae2da5910816bbeb6114482b76c76c96
+  languageName: node
+  linkType: hard
+
 "@remix-run/node@npm:1.12.0, @remix-run/node@npm:^1.12.0":
   version: 1.12.0
   resolution: "@remix-run/node@npm:1.12.0"
@@ -30411,6 +30422,7 @@ __metadata:
     "@remix-run/dev": ^1.12.0
     "@remix-run/eslint-config": ^1.12.0
     "@remix-run/express": ^1.12.0
+    "@remix-run/netlify": ^1.12.0
     "@remix-run/node": ^1.12.0
     "@remix-run/react": ^1.12.0
     "@remix-run/server-runtime": ^1.12.0
