@@ -14,7 +14,8 @@
   },
   "workspaces": [
     "examples/*",
-    "packages/*"
+    "packages/*",
+    "realworld/*"
   ],
   "packageManager": "yarn@3.3.1"
 }
