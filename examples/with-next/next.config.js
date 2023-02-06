@@ -1,7 +1,7 @@
 import withBundleAnalyzer from "@next/bundle-analyzer";
 import withMDX from "@next/mdx";
 
-const shouldAnalyze = (process.env.ANALYZE = "true");
+const shouldAnalyze = process.env.ANALYZE === "true";
 
 /** @type {import('next').NextConfig} */
 export default withBundleAnalyzer({
@@ -13,5 +13,6 @@ export default withBundleAnalyzer({
       appDir: true,
       mdxRs: true,
     },
+    transpilePackages: ["@realworld/sdk"],
   })
 );
