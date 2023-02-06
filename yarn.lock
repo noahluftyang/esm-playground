@@ -4500,6 +4500,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@realworld/sdk@workspace:^, @realworld/sdk@workspace:realworld/sdk":
+  version: 0.0.0-use.local
+  resolution: "@realworld/sdk@workspace:realworld/sdk"
+  dependencies:
+    "@types/content-type": ^1.1.5
+    content-type: ^1.0.5
+    ky: ^0.33.2
+    typescript: ^4.9.5
+  languageName: unknown
+  linkType: soft
+
 "@remix-run/dev@npm:^1.12.0":
   version: 1.12.0
   resolution: "@remix-run/dev@npm:1.12.0"
@@ -6762,6 +6773,13 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: fe81351470f2d3165e8b12ce33542eef89ea893e36dd62e8f7d72566dfb7e448376ae962f9f3ea888547ce8b55a40020ca0e01d637fab5d99567673084542641
+  languageName: node
+  linkType: hard
+
+"@types/content-type@npm:^1.1.5":
+  version: 1.1.5
+  resolution: "@types/content-type@npm:1.1.5"
+  checksum: 77d0a88003c18c4d75f8344c678545aa1f1a4c163420c38bf669ba05eb9e0a243ecd022b2c83fbd01def608c275743000c0bf37e9ac95e16f2c3af16ec70534b
   languageName: node
   linkType: hard
 
@@ -11479,7 +11497,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"content-type@npm:~1.0.4":
+"content-type@npm:^1.0.5, content-type@npm:~1.0.4":
   version: 1.0.5
   resolution: "content-type@npm:1.0.5"
   checksum: 566271e0a251642254cde0f845f9dd4f9856e52d988f4eb0d0dcffbb7a1f8ec98de7a5215fc628f3bce30fe2fb6fd2bc064b562d721658c59b544e2d34ea2766
@@ -19873,6 +19891,13 @@ __metadata:
   version: 2.0.6
   resolution: "klona@npm:2.0.6"
   checksum: ac9ee3732e42b96feb67faae4d27cf49494e8a3bf3fa7115ce242fe04786788e0aff4741a07a45a2462e2079aa983d73d38519c85d65b70ef11447bbc3c58ce7
+  languageName: node
+  linkType: hard
+
+"ky@npm:^0.33.2":
+  version: 0.33.2
+  resolution: "ky@npm:0.33.2"
+  checksum: bb5b1685b7d639dad5fc0a41a218f76c2400d2a9189bcf747f541633af13b68a7ef12bb8aa971bc1667087789ec5965cc3728e24b693897a2d0cc539d7593655
   languageName: node
   linkType: hard
 
@@ -31652,6 +31677,7 @@ __metadata:
     "@next/font": ^13.1.6
     "@next/mdx": ^13.1.6
     "@playwright/test": ^1.30.0
+    "@realworld/sdk": "workspace:^"
     "@sentry/nextjs": ^7.35.0
     "@testing-library/react": ^13.4.0
     "@types/node": ^18.11.18

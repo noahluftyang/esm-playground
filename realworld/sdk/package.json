@@ -1,0 +1,15 @@
+{
+  "name": "@realworld/sdk",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "dependencies": {
+    "content-type": "^1.0.5",
+    "ky": "^0.33.2"
+  },
+  "devDependencies": {
+    "@types/content-type": "^1.1.5",
+    "typescript": "^4.9.5"
+  }
+}
