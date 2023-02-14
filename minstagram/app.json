@@ -4,6 +4,15 @@
     "slug": "minstagram",
     "version": "1.0.0",
     "assetBundlePatterns": ["**/*"],
-    "plugins": ["expo-community-flipper", "sentry-expo"]
+    "jsEngine": "hermes",
+    "plugins": [
+      "expo-community-flipper",
+      "sentry-expo",
+      ["expo-build-properties", { "ios": { "useFrameworks": "static" } }]
+    ],
+    "scheme": "minstagram",
+    "web": {
+      "bundler": "metro"
+    }
   }
 }
