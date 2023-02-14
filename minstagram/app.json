@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "minstagram",
+    "slug": "minstagram",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
