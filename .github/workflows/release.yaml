@@ -1,0 +1,23 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    name: Release
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          cache: yarn
+          node-version-file: .nvmrc
+      - name: Install dependencies
+        run: yarn --immutable
+      - name: Create release
+        run: yarn auto shipit

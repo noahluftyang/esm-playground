@@ -1,11 +1,15 @@
 {
   "name": "esm-playground",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "repository": "git@github.com:noahluftyang/esm-playground.git",
   "author": "noahluftyang <euihyun.yang.9x@gmail.com>",
   "license": "MIT",
   "type": "module",
   "devDependencies": {
+    "@auto-it/conventional-commits": "^10.42.1",
+    "@auto-it/git-tag": "^10.42.1",
+    "@auto-it/slack": "^10.42.1",
+    "auto": "^10.42.1",
     "prettier": "^2.8.3",
     "prettier-plugin-astro": "^0.8.0",
     "prettier-plugin-svelte": "^2.9.0",
