@@ -21,3 +21,5 @@ jobs:
         run: yarn --immutable
       - name: Create release
         run: yarn auto shipit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
