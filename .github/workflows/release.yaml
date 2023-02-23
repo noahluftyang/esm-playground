@@ -22,6 +22,6 @@ jobs:
       - name: Install dependencies
         run: yarn --immutable
       - name: Create release
-        run: yarn auto shipit
+        run: yarn auto release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
