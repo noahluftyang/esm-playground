@@ -11,6 +11,12 @@ const router = new Router({
   base: "/api",
 });
 
+const ProfileSchema = z.object({
+  username: z.string(),
+  bio: z.string().nullable(),
+  image: z.string().url().nullable(),
+});
+
 export default {
   fetch(request: Request, env: Env) {
     const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY);
@@ -149,6 +155,23 @@ export default {
           token,
           username: user?.user_metadata.username,
         },
+      });
+    });
+
+    // get user profile
+    router.get("/profiles/:username", async (request) => {
+      const username = request.params.username;
+
+      const { data } = await supabase
+        .from("profiles")
+        .select()
+        .eq("username", username)
+        .single();
+
+      const profile = ProfileSchema.parse(data);
+
+      return new JsonResponse({
+        profile,
       });
     });
 
