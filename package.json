@@ -18,6 +18,7 @@
     "vitest": "^0.28.5"
   },
   "workspaces": [
+    "blog",
     "examples/*",
     "packages/*",
     "realworld/*"
