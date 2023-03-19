@@ -1,12 +1,18 @@
 import { Inter } from "next/font/google";
 import Image from "next/image";
+import { Container } from "~/src/Container";
+import { Header } from "~/src/Header";
 import styles from "./page.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
+      <Header />
+      <Container>
+        <p>hello world</p>
+      </Container>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;

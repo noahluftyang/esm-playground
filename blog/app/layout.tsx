@@ -14,10 +14,10 @@ interface Props {
 
 const GOOGLE_ANALYTICS_ID = "G-WSCH49D0HP";
 
-export default function Layout(props: Props) {
+export default function Layout({ children }: Props) {
   return (
-    <html lang="en">
-      <body {...props} />
+    <html lang="ko">
+      <body>{children}</body>
       <Script
         async={true}
         src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
