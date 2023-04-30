@@ -15,6 +15,7 @@
     "prettier-plugin-svelte": "^2.9.0",
     "rome": "^11.0.0",
     "turbo": "^1.7.1",
+    "typescript": "^5.0.4",
     "vitest": "^0.28.5"
   },
   "workspaces": [

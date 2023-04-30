@@ -1,0 +1,52 @@
+{
+  "name": "@noahluftyang/components",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": "./src/index.ts",
+  "scripts": {
+    "build": "tsup",
+    "build:storybook": "storybook build",
+    "develop:storybook": "storybook dev -p 6006",
+    "prepack": "yarn build"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.6.0"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@noahluftyang/tsconfig": "workspace:^",
+    "@storybook/addon-a11y": "^7.0.7",
+    "@storybook/addon-essentials": "^7.0.7",
+    "@storybook/addon-highlight": "^7.0.7",
+    "@storybook/addon-interactions": "^7.0.7",
+    "@storybook/addon-links": "^7.0.7",
+    "@storybook/addon-storysource": "^7.0.7",
+    "@storybook/builder-vite": "^7.0.7",
+    "@storybook/react": "^7.0.7",
+    "@storybook/react-vite": "^7.0.7",
+    "chromatic": "^6.17.3",
+    "framer-motion": "^10.12.4",
+    "msw": "^1.2.1",
+    "msw-storybook-addon": "^1.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.7",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "@emotion/react": ">= 11",
+    "@emotion/styled": ">= 11",
+    "framer-motion": "*",
+    "react": ">= 18",
+    "react-dom": ">= 18"
+  },
+  "publishConfig": {
+    "exports": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  }
+}
