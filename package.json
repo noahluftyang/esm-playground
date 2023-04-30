@@ -9,6 +9,7 @@
     "@auto-it/conventional-commits": "^10.42.1",
     "@auto-it/git-tag": "^10.42.1",
     "@auto-it/slack": "^10.42.1",
+    "@changesets/cli": "^2.26.1",
     "auto": "^10.42.1",
     "prettier": "^2.8.3",
     "prettier-plugin-astro": "^0.8.0",
