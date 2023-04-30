@@ -20257,24 +20257,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esm-playground@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "esm-playground@workspace:."
-  dependencies:
-    "@auto-it/conventional-commits": ^10.42.1
-    "@auto-it/git-tag": ^10.42.1
-    "@auto-it/slack": ^10.42.1
-    auto: ^10.42.1
-    prettier: ^2.8.3
-    prettier-plugin-astro: ^0.8.0
-    prettier-plugin-svelte: ^2.9.0
-    rome: ^11.0.0
-    turbo: ^1.7.1
-    typescript: ^5.0.4
-    vitest: ^0.28.5
-  languageName: unknown
-  linkType: soft
-
 "espree@npm:9.2.0":
   version: 9.2.0
   resolution: "espree@npm:9.2.0"
@@ -29105,6 +29087,24 @@ __metadata:
   checksum: 0b2ebc113dfcf737d48dde49cfebf3ad2d82a8c3188e7100c6f375e30eafbef9e9124aadc3becef237b042fd5eb0aad2fd78669c20972d045bbe7fea8ba0be5c
   languageName: node
   linkType: hard
+
+"noahverse@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "noahverse@workspace:."
+  dependencies:
+    "@auto-it/conventional-commits": ^10.42.1
+    "@auto-it/git-tag": ^10.42.1
+    "@auto-it/slack": ^10.42.1
+    auto: ^10.42.1
+    prettier: ^2.8.3
+    prettier-plugin-astro: ^0.8.0
+    prettier-plugin-svelte: ^2.9.0
+    rome: ^11.0.0
+    turbo: ^1.7.1
+    typescript: ^5.0.4
+    vitest: ^0.28.5
+  languageName: unknown
+  linkType: soft
 
 "node-abi@npm:^3.3.0":
   version: 3.31.0

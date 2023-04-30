@@ -1,7 +1,7 @@
 {
-  "name": "esm-playground",
+  "name": "noahverse",
   "version": "0.0.1",
-  "repository": "git@github.com:noahluftyang/esm-playground.git",
+  "repository": "git@github.com:noahluftyang/noahverse.git",
   "author": "noahluftyang <euihyun.yang.9x@gmail.com>",
   "license": "MIT",
   "type": "module",
