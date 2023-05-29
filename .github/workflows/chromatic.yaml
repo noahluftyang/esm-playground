@@ -5,7 +5,7 @@ on:
       - main
 
 jobs:
-  deployment:
+  components:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -14,11 +14,29 @@ jobs:
         uses: actions/setup-node@v3
         with:
           cache: yarn
-          node-version: 16
+          node-version-file: .nvmrc
       - name: Install dependencies
         run: yarn --immutable
       - name: Deploy to Chromatic
         uses: chromaui/action@v1
         with:
+          buildScriptName: build:storybook
+          projectToken: ${{ secrets.COMPONENTS_CHROMATIC_PROJECT_TOKEN }}
+          workingDir: packages/components
+  root:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          cache: yarn
+          node-version-file: .nvmrc
+      - name: Install dependencies
+        run: yarn --immutable
+      - name: Deploy to Chromatic
+        uses: chromaui/action@v1
+        with:
+          buildScriptName: build:storybook
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          workingDir: examples/with-storybook

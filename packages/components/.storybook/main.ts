@@ -1,7 +1,8 @@
-import type { StorybookConfig } from "@storybook/react-vite";
+import { StorybookConfig } from "@storybook/react-vite";
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.stories.tsx"],
+  framework: "@storybook/react-vite",
   core: {
     builder: "@storybook/builder-vite",
   },
@@ -14,7 +15,6 @@ const config: StorybookConfig = {
     "@storybook/addon-storysource",
     "msw-storybook-addon",
   ],
-  framework: "@storybook/react-vite",
 };
 
 export default config;
