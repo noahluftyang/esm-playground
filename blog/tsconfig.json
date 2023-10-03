@@ -2,14 +2,15 @@
   "extends": "@tsconfig/strictest",
   "compilerOptions": {
     "allowJs": true,
-    "target": "es5",
+    "incremental": true,
+    "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "noEmit": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "noEmit": true,
+    "noPropertyAccessFromIndexSignature": false,
     "resolveJsonModule": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "target": "es5",
     "plugins": [
       {
         "name": "next"

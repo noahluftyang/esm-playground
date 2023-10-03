@@ -4,33 +4,25 @@ import { environments } from "~/src/environments";
 
 builder.init(environments.BUILDER_API_KEY);
 
-interface Props {
+export default async function Page({
+  params,
+}: {
   params: {
-    page: string[];
+    story: string;
   };
-}
-
-export default async function Page(props: Props) {
+}) {
   const content = await builder
-    .get("page", {
+    .get("story", {
       userAttributes: {
-        urlPath: "/" + (props?.params?.page?.join("/") || ""),
+        urlPath: `/stories/${params.story}`,
       },
-      prerender: false,
     })
     .toPromise();
 
-  console.log(
-    "enter",
-    props.params.page,
-    "/" + (props?.params?.page?.join("/") || ""),
-    content,
-  );
-
   return (
-    <>
-      <div>hi</div>
+    <div>
+      hi123
       <RenderBuilderContent content={content} />
-    </>
+    </div>
   );
 }

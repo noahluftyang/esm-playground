@@ -5,20 +5,21 @@ import { environments } from "~/src/environments";
 
 builder.init(environments.BUILDER_API_KEY);
 
-export default async function StoriesPage() {
-  const items = await builder.getAll("story");
-
-  console.log(items);
+export default async function Page() {
+  const items = await getStories();
 
   return (
     <>
       <Header />
       <Container asChild={true}>
-        <main>stories</main>
         {items.map((item) => {
-          return <div key={item.id}>{item.data.title}</div>;
+          return <div key={item.id}>{item.data!.title}</div>;
         })}
       </Container>
     </>
   );
+}
+
+function getStories() {
+  return builder.getAll("story");
 }
