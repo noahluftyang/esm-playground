@@ -2,5 +2,9 @@
   "deno.enable": false,
   "deno.lint": true,
   "deno.unstable": true,
-  "deno.enablePaths": ["./realworld"]
+  "deno.enablePaths": ["./realworld"],
+  "editor.defaultFormatter": "biomejs.biome",
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  }
 }
