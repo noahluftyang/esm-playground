@@ -1,14 +1,13 @@
 {
   "name": "@noahluftyang/components",
   "version": "0.0.0",
-  "private": true,
   "type": "module",
   "exports": "./src/index.ts",
   "scripts": {
     "build": "tsup",
     "build:storybook": "storybook build",
     "develop:storybook": "storybook dev -p 6006",
-    "prepack": "yarn build"
+    "prepack": "pnpm build"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.6.0"

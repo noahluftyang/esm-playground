@@ -4,6 +4,7 @@
   "deno.unstable": true,
   "deno.enablePaths": ["./realworld"],
   "editor.defaultFormatter": "biomejs.biome",
+  "npm.packageManager": "pnpm",
   "[typescript]": {
     "editor.defaultFormatter": "biomejs.biome"
   }

@@ -8,22 +8,62 @@ on:
       - opened
       - synchronize
 
+env:
+  TURBO_TEAM: ${{ vars.TURBO_TEAM }}
+  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+
 jobs:
   build:
-    name: Build examples
+    name: Build
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
-      - name: Setup Node.js environment
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          cache: yarn
+          cache: pnpm
           node-version-file: .nvmrc
       - name: Install dependencies
-        run: yarn --immutable
+        run: pnpm install
       - name: Build
-        run: yarn turbo run build
+        run: pnpm turbo run build
+  lint:
+    name: Lint
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          cache: pnpm
+          node-version-file: .nvmrc
+      - name: Install dependencies
+        run: pnpm install
+      - name: Lint
+        run: pnpm turbo run lint
+  test:
+    name: Test
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          cache: pnpm
+          node-version-file: .nvmrc
+      - name: Install dependencies
+        run: pnpm install
+      - name: Test
+        run: pnpm turbo run test

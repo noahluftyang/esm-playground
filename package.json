@@ -15,21 +15,18 @@
     "@auto-it/git-tag": "^10.42.1",
     "@auto-it/slack": "^10.42.1",
     "@biomejs/biome": "^1.2.2",
-    "@changesets/cli": "^2.26.1",
-    "@storybook/builder-vite": "^7.0.18",
-    "@storybook/react-vite": "^7.0.18",
+    "@changesets/cli": "^2.26.2",
+    "@storybook/builder-vite": "^7.4.6",
+    "@storybook/react-vite": "^7.4.6",
     "auto": "^10.42.1",
-    "chromatic": "^6.17.4",
-    "storybook": "^7.0.18",
-    "turbo": "^1.7.1",
-    "typescript": "^5.0.4",
-    "vitest": "^0.28.5"
+    "chromatic": "^6.24.1",
+    "storybook": "^7.4.6",
+    "turbo": "^1.10.15",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
   },
-  "workspaces": [
-    "blog",
-    "examples/*",
-    "packages/**",
-    "realworld/*"
-  ],
-  "packageManager": "yarn@3.6.3"
+  "engines": {
+    "node": ">= 18",
+    "pnpm": ">= 8"
+  }
 }
