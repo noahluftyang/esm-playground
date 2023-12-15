@@ -14,13 +14,15 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           cache: pnpm
           node-version-file: .nvmrc
+          registry-url: https://npm.pkg.github.com
+          scope: noahluftyang
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
       - name: Install dependencies
         run: pnpm install
       - name: Create Release Pull Request or Publish to GPR
