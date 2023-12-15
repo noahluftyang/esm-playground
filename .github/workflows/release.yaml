@@ -3,12 +3,16 @@ on:
   push:
     branches:
       - main
-
+      
 jobs:
   release:
     name: Release
     timeout-minutes: 15
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+      pull-requests: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
