@@ -1,0 +1,6 @@
+{
+  "name": "@noahluftyang/biome-config",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./biome.json"
+}

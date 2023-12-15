@@ -1,7 +1,6 @@
 {
-  "compileOnSave": false,
+  "extends": "@tsconfig/strictest",
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "strict": true
+    "jsx": "react-jsx"
   }
 }

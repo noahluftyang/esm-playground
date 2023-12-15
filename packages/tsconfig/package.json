@@ -4,5 +4,8 @@
   "main": "./tsconfig.json",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "@tsconfig/strictest": "^2.0.2"
   }
 }

@@ -7,8 +7,10 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
+    "clean": "knip",
     "build:storybook": "storybook build",
-    "develop:storybook": "storybook dev -p 6006"
+    "develop:storybook": "storybook dev -p 6006",
+    "lint": "biome check ."
   },
   "devDependencies": {
     "@auto-it/conventional-commits": "^10.42.1",
@@ -16,10 +18,13 @@
     "@auto-it/slack": "^10.42.1",
     "@biomejs/biome": "^1.2.2",
     "@changesets/cli": "^2.26.2",
+    "@commitlint/cli": "^18.4.3",
+    "@noahluftyang/biome-config": "workspace:^",
     "@storybook/builder-vite": "^7.4.6",
     "@storybook/react-vite": "^7.4.6",
     "auto": "^10.42.1",
     "chromatic": "^6.24.1",
+    "knip": "^3.8.0",
     "storybook": "^7.4.6",
     "turbo": "^1.10.15",
     "typescript": "^5.2.2",
