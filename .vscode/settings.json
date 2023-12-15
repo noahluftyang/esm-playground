@@ -5,6 +5,7 @@
   "deno.enablePaths": ["./realworld"],
   "npm.packageManager": "pnpm",
   "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
     "source.organizeImports": "never",
     "source.organizeImports.biome": "explicit"
   },

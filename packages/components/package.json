@@ -33,7 +33,7 @@
     "react-dom": "^18.2.0",
     "storybook": "^7.0.7",
     "tsup": "^6.7.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.3.3"
   },
   "peerDependencies": {
     "@emotion/react": ">= 11",
