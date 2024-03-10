@@ -13,7 +13,7 @@ jobs:
       - name: Setup package manager
         uses: oven-sh/setup-bun@v1
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: bun install
       - name: Deploy to Chromatic
         uses: chromaui/action@v1
         with:
@@ -28,7 +28,7 @@ jobs:
       - name: Setup package manager
         uses: oven-sh/setup-bun@v1
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: bun install
       - name: Deploy to Chromatic
         uses: chromaui/action@v1
         with:
