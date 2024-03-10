@@ -1,5 +1,0 @@
-packages:
-  - blog
-  - examples/**
-  - packages/**
-  - realworld/**

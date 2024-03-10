@@ -7,7 +7,7 @@
     "build": "tsup",
     "build:storybook": "storybook build",
     "develop:storybook": "storybook dev -p 6006",
-    "prepack": "pnpm build"
+    "prepack": "bun build"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.6.0"

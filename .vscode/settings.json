@@ -3,7 +3,8 @@
   "deno.lint": true,
   "deno.unstable": true,
   "deno.enablePaths": ["./realworld"],
-  "npm.packageManager": "pnpm",
+  "npm.packageManager": "bun",
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "quickfix.biome": "explicit",
     "source.organizeImports": "never",
