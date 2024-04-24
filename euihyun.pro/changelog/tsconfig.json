@@ -1,0 +1,6 @@
+{
+  "extends": "@noahluftyang/tsconfig",
+  "compilerOptions": {
+    "jsx": "react-jsx"
+  }
+}

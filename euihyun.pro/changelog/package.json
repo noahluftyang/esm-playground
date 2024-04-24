@@ -1,0 +1,22 @@
+{
+  "name": "changelog",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vinxi build",
+    "develop": "vinxi dev"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "^1.26.10",
+    "@tanstack/router-devtools": "^1.26.10",
+    "@vinxi/react": "^0.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vinxi": "^0.3.11"
+  },
+  "devDependencies": {
+    "@tanstack/router-vite-plugin": "^1.26.10",
+    "@types/node": "^20.12.5"
+  }
+}
